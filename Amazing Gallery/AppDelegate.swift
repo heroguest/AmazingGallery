@@ -7,8 +7,8 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-  weak var window: UIWindow?
-  weak var navigationController: UINavigationController!
+  var window: UIWindow?
+  var navigationController: UINavigationController!
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 

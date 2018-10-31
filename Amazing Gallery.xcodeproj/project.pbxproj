@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		797D55CA218A21EB00BECE37 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D55C9218A21EB00BECE37 /* DetailViewController.swift */; };
+		797D55CC218A222E00BECE37 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D55CB218A222E00BECE37 /* DetailPresenter.swift */; };
+		79A3F02A21895CE50055BD34 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A3F02921895CE50055BD34 /* PhotoCollectionViewCell.xib */; };
+		79DC146821892F1900C34E77 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01E26E20DF231700452EDA /* PhotoCollectionViewCell.swift */; };
 		CB01E1EB20DEF7AC00452EDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01E1EA20DEF7AC00452EDA /* AppDelegate.swift */; };
 		CB01E1ED20DEF7AC00452EDA /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01E1EC20DEF7AC00452EDA /* GalleryViewController.swift */; };
 		CB01E1F020DEF7AC00452EDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB01E1EE20DEF7AC00452EDA /* Main.storyboard */; };
@@ -31,6 +35,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		797D55C9218A21EB00BECE37 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		797D55CB218A222E00BECE37 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		79A3F02921895CE50055BD34 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		CB01E1E720DEF7AC00452EDA /* Amazing Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amazing Gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB01E1EA20DEF7AC00452EDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB01E1EC20DEF7AC00452EDA /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +61,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		797D55C6218A219C00BECE37 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				797D55C8218A21B600BECE37 /* DetailController */,
+				797D55C7218A21A900BECE37 /* Gallery */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		797D55C7218A21A900BECE37 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				CB01E1EC20DEF7AC00452EDA /* GalleryViewController.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		797D55C8218A21B600BECE37 /* DetailController */ = {
+			isa = PBXGroup;
+			children = (
+				797D55C9218A21EB00BECE37 /* DetailViewController.swift */,
+				797D55CB218A222E00BECE37 /* DetailPresenter.swift */,
+			);
+			path = DetailController;
+			sourceTree = "<group>";
+		};
+		79A3F02821895CBA0055BD34 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB01E26E20DF231700452EDA /* PhotoCollectionViewCell.swift */,
+				79A3F02921895CE50055BD34 /* PhotoCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CB01E1DE20DEF7AC00452EDA = {
 			isa = PBXGroup;
 			children = (
@@ -74,9 +116,9 @@
 		CB01E1E920DEF7AC00452EDA /* Amazing Gallery */ = {
 			isa = PBXGroup;
 			children = (
+				797D55C6218A219C00BECE37 /* Controllers */,
+				79A3F02821895CBA0055BD34 /* Views */,
 				CB01E1EA20DEF7AC00452EDA /* AppDelegate.swift */,
-				CB01E1EC20DEF7AC00452EDA /* GalleryViewController.swift */,
-				CB01E26E20DF231700452EDA /* PhotoCollectionViewCell.swift */,
 				CB01E1EE20DEF7AC00452EDA /* Main.storyboard */,
 				CB01E1F120DEF7AE00452EDA /* Assets.xcassets */,
 				CB01E1F320DEF7AE00452EDA /* LaunchScreen.storyboard */,
@@ -153,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB01E1F520DEF7AE00452EDA /* LaunchScreen.storyboard in Resources */,
+				79A3F02A21895CE50055BD34 /* PhotoCollectionViewCell.xib in Resources */,
 				CB01E1F220DEF7AE00452EDA /* Assets.xcassets in Resources */,
 				CB01E1F020DEF7AC00452EDA /* Main.storyboard in Resources */,
 			);
@@ -165,8 +208,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79DC146821892F1900C34E77 /* PhotoCollectionViewCell.swift in Sources */,
 				CB01E1ED20DEF7AC00452EDA /* GalleryViewController.swift in Sources */,
 				CB01E1EB20DEF7AC00452EDA /* AppDelegate.swift in Sources */,
+				797D55CC218A222E00BECE37 /* DetailPresenter.swift in Sources */,
+				797D55CA218A21EB00BECE37 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = H46GZ2RY2C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -321,7 +367,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.interview.Amazing-Gallery";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.interview.Amazing-GalleryArturoTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -333,7 +379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = H46GZ2RY2C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -343,7 +389,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.interview.Amazing-Gallery";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.interview.Amazing-GalleryArturoTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

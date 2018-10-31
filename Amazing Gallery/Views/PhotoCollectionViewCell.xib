@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="CPO-dE-HkS" customClass="PhotoCollectionViewCell" customModule="Amazing_Gallery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zgs-74-X7R">
+                        <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zgs-74-X7R" secondAttribute="trailing" id="YZ9-xD-bTb"/>
+                <constraint firstItem="zgs-74-X7R" firstAttribute="top" secondItem="CPO-dE-HkS" secondAttribute="top" id="klY-bZ-go7"/>
+                <constraint firstAttribute="bottom" secondItem="zgs-74-X7R" secondAttribute="bottom" id="pcR-L5-zRP"/>
+                <constraint firstItem="zgs-74-X7R" firstAttribute="leading" secondItem="CPO-dE-HkS" secondAttribute="leading" id="uEk-O2-Xef"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="C7s-S5-gBh"/>
+            <size key="customSize" width="102" height="104"/>
+            <connections>
+                <outlet property="imageCell" destination="zgs-74-X7R" id="ciK-Ix-ZCf"/>
+            </connections>
+            <point key="canvasLocation" x="-31.5" y="-190"/>
+        </collectionViewCell>
+    </objects>
+</document>
